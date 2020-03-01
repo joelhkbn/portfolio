@@ -6,24 +6,7 @@ const staticAssets = [
     './index.html',
     './css/style.css',
     './js/index.js',
-    './manifest.json',
-    './img',
-    '/dev-joel-01.jpg',
-    '/dev-joel-02.jpg',
-    '/devjoel.png',
-    '/icon_192.png',
-    '/icon_512.png',
-    '/portfolio-01.jpg',
-    '/portfolio-02.jpg',
-    '/portfolio-03.jpg',
-    '/portfolio-04.jpg',
-    '/portfolio-05.jpg',
-    '/portfolio-06.jpg',
-    '/portfolio-07.jpg',
-    '/portfolio-08.jpg',
-    '/portfolio-09.jpg',
-    '/portfolio-10.jpg',
-    '/services-bg.jpg',
+    './manifest.json'
 ];
 
 
