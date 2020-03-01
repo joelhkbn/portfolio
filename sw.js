@@ -2,18 +2,23 @@
 
 const cacheName = 'porto-v1';
 const staticAssets = [
-    './',
-    './index.html',
-    './css/style.css',
-    './js/index.js',
-    './manifest.json'
+    '/',
+    '/index.html',
+    '/css/style.css',
+    '/js/index.js',
+    '/img/icon_192.png',
+    '/manifest.json',
+    'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.css',
+    'https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap'
 ];
 
 
 
 self.addEventListener('install', async e => {
     const cache = await caches.open(cacheName);
-    await cache.add(staticAssets);
+    await cache.addAll(staticAssets);
+    console.log('caching assets');
     return self.skipWaiting();
 });
 
